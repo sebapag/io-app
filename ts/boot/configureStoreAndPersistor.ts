@@ -25,7 +25,7 @@ import {
 } from "../store/reducers";
 import { getInitialState as getInstallationInitialState } from "../store/reducers/notifications/installation";
 import { GlobalState, PersistedGlobalState } from "../store/reducers/types";
-import { PotTransform } from "../store/transforms/potTransforms";
+import { PotTransform } from "../store/transforms/potTransform";
 import { NAVIGATION_MIDDLEWARE_LISTENERS_KEY } from "../utils/constants";
 
 /**

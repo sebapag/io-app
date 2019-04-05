@@ -4853,10 +4853,10 @@ italia-ts-commons@^3.1.1:
     validator "^10.1.0"
     winston "^3.0.0"
 
-italia-ts-commons@^3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/italia-ts-commons/-/italia-ts-commons-3.1.2.tgz#571535b518732b9f59e18255ddf6d43a108786bb"
-  integrity sha512-BUYMrXBnue2nJtlXSU80qLsdUGIHxMfy31v9KSgG6g7yA1m5MCnNzQi0xtFE/ypaBbOKdVPc2jtAOZbRmeMTIw==
+italia-ts-commons@^4.0.1:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/italia-ts-commons/-/italia-ts-commons-4.2.0.tgz#618d4ee4b83ec40c23a296c5a373c2b4743639aa"
+  integrity sha512-q6p1+02ku/T39w2sk0A1VMlN4MpgKlM3aod04yASllG5YQhj8dACKS1bapbbSszHf9VrRXicL9k9wN+0LE5FiA==
   dependencies:
     fp-ts "^1.6.2"
     io-ts "^1.4.2"
