@@ -68,6 +68,7 @@
 		F79805F89B1C426B89BF2FD5 /* libReactNativeExceptionHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D94E785317A4CE6840C34C0 /* libReactNativeExceptionHandler.a */; };
 		FC6BBB79F5E84BA6BCA7A29C /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 629702ABB4FC4FCEA5C29455 /* Roboto_medium.ttf */; };
 		FCBD12162A70BC057E884393 /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF11F115CF1E1FC7FA05A617 /* Instabug.framework */; };
+		BFEA096255D341569540CF2A /* libQRCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4DEA0C6AEB47559FF949FE /* libQRCode.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -475,6 +476,8 @@
 		F5F65895457F4A8593B7110D /* libRNTextInputMask.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNTextInputMask.a; sourceTree = "<group>"; };
 		FE5D054D499F403F8054579A /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		FFF836F35D4E46B1B6F9C042 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		6417BAF2ADB44DC4B07B7BCD /* QrCode.xcodeproj */ = {isa = PBXFileReference; name = "QrCode.xcodeproj"; path = "../node_modules/react-native-lewin-qrcode/ios/QrCode.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		FC4DEA0C6AEB47559FF949FE /* libQRCode.a */ = {isa = PBXFileReference; name = "libQRCode.a"; path = "libQRCode.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -510,6 +513,7 @@
 				B0FB3D49E5CE77110DC71130 /* libPods-ItaliaApp.a in Frameworks */,
 				018DA104690D446AB4939E94 /* libRNInstabug.a in Frameworks */,
 				FCBD12162A70BC057E884393 /* Instabug.framework in Frameworks */,
+				BFEA096255D341569540CF2A /* libQRCode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,6 +750,7 @@
 				3087D2BB18D649C9ABA70F4E /* ReactNativeExceptionHandler.xcodeproj */,
 				A4827A715541433A928083C5 /* RNTextInputMask.xcodeproj */,
 				2F9A90CEEF7F49FAAC6ED3C4 /* RNInstabug.xcodeproj */,
+				6417BAF2ADB44DC4B07B7BCD /* QrCode.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1536,6 +1541,7 @@
 					"$(SRCROOT)/../node_modules/react-native-exception-handler/ios",
 					"$(SRCROOT)/../node_modules/react-native-text-input-mask/ios/RNTextInputMask/RNTextInputMask/**",
 					"$(SRCROOT)/../node_modules/instabug-reactnative/ios/RNInstabug/**",
+					"$(SRCROOT)/../node_modules/react-native-lewin-qrcode/ios/qrcode/**",
 				);
 				INFOPLIST_FILE = ItaliaAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1566,6 +1572,7 @@
 					"$(SRCROOT)/../node_modules/react-native-exception-handler/ios",
 					"$(SRCROOT)/../node_modules/react-native-text-input-mask/ios/RNTextInputMask/RNTextInputMask/**",
 					"$(SRCROOT)/../node_modules/instabug-reactnative/ios/RNInstabug/**",
+					"$(SRCROOT)/../node_modules/react-native-lewin-qrcode/ios/qrcode/**",
 				);
 				INFOPLIST_FILE = ItaliaAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1606,6 +1613,7 @@
 					"$(SRCROOT)/../node_modules/react-native-exception-handler/ios",
 					"$(SRCROOT)/../node_modules/react-native-text-input-mask/ios/RNTextInputMask/RNTextInputMask/**",
 					"$(SRCROOT)/../node_modules/instabug-reactnative/ios/RNInstabug/**",
+					"$(SRCROOT)/../node_modules/react-native-lewin-qrcode/ios/qrcode/**",
 				);
 				INFOPLIST_FILE = ItaliaApp/Info.plist;
 				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
@@ -1646,6 +1654,7 @@
 					"$(SRCROOT)/../node_modules/react-native-exception-handler/ios",
 					"$(SRCROOT)/../node_modules/react-native-text-input-mask/ios/RNTextInputMask/RNTextInputMask/**",
 					"$(SRCROOT)/../node_modules/instabug-reactnative/ios/RNInstabug/**",
+					"$(SRCROOT)/../node_modules/react-native-lewin-qrcode/ios/qrcode/**",
 				);
 				INFOPLIST_FILE = ItaliaApp/Info.plist;
 				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
