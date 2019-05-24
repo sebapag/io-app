@@ -145,14 +145,17 @@ class ScanQrCodeScreen extends React.Component<Props, State> {
     resultOrError.foldL<void>(this.onInvalidQrCode, this.onValidQrCode);
   };
 
-  private showImageLib = () => {
+  /**
+   * Start image chooser
+   */
+  private showImagePicker = () => {
     const options = {
       storageOptions: {
         skipBackup: true,
         path: "images"
       }
     };
-    // Open Image Library:
+    // Open Image Library
     ImagePicker.launchImageLibrary(options, response => {
       const path = response.path ? response.path : response.uri;
       if (path != null) {
@@ -242,7 +245,7 @@ class ScanQrCodeScreen extends React.Component<Props, State> {
                     {I18n.t("wallet.QRtoPay.cameraUsageInfo")}
                   </Text>
                   <View spacer={true} />
-                  <Button onPress={this.showImageLib} style={styles.button}>
+                  <Button onPress={this.showImagePicker} style={styles.button}>
                     <Text>{I18n.t("wallet.QRtoPay.chooser")}</Text>
                   </Button>
                   <View spacer={true} extralarge={true} />
