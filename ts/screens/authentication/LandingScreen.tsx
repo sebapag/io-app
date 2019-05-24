@@ -3,10 +3,11 @@
  * It includes a carousel with highlights on the app functionalities
  */
 
-import { Button, Content, Text, View } from "native-base";
+import { Button, Content, View } from "native-base";
 import * as React from "react";
 import { NavigationScreenProp, NavigationState } from "react-navigation";
 import { connect } from "react-redux";
+import BaseText from "../../components/BaseText";
 
 import { HorizontalScroll } from "../../components/HorizontalScroll";
 import { LandingCardComponent } from "../../components/LandingCard";
@@ -97,7 +98,7 @@ const LandingScreen: React.SFC<Props> = props => {
           testID="landing-button-login"
         >
           <IconFont name="io-profilo" color={variables.colorWhite} />
-          <Text>{I18n.t("authentication.landing.login")}</Text>
+          <BaseText>{I18n.t("authentication.landing.login")}</BaseText>
         </Button>
         <View spacer={true} />
         <Button
@@ -106,7 +107,7 @@ const LandingScreen: React.SFC<Props> = props => {
           transparent={true}
           onPress={navigateToSpidInformationRequest}
         >
-          <Text>{I18n.t("authentication.landing.nospid")}</Text>
+          <BaseText>{I18n.t("authentication.landing.nospid")}</BaseText>
         </Button>
       </View>
     </BaseScreenComponent>

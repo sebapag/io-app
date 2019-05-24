@@ -2,11 +2,12 @@
  * This component renders the card displayed in the landing page carousel
  */
 
-import { Text, View } from "native-base";
+import { View } from "native-base";
 import * as React from "react";
 import { Dimensions, Image, StyleSheet } from "react-native";
 import { Col } from "react-native-easy-grid";
 import { Grid } from "react-native-easy-grid";
+import BaseText from "./BaseText";
 
 type Props = {
   id: number;
@@ -37,12 +38,12 @@ export const LandingCardComponent: React.SFC<Props> = card => (
     <Grid>
       <Col size={1} />
       <Col size={7}>
-        <Text bold={true} alignCenter={true}>
+        <BaseText bold={true} alignCenter={true}>
           {" "}
           {card.title}{" "}
-        </Text>
+        </BaseText>
         <View spacer={true} />
-        <Text alignCenter={true}> {card.content} </Text>
+        <BaseText alignCenter={true}> {card.content} </BaseText>
         <View spacer={true} />
       </Col>
       <Col size={1} />
